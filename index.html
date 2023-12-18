@@ -1,148 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Climate Change Awareness</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Awareness</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4; /* Light grey background */
+            color: #333; /* Dark grey text color */
+        }
 
-    header {
-      background-color: #3498db;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
 
-    img {
-      max-width: 95%;
-      height: auto;
-      display: block;
-      margin: 0 auto; /* Center the image */
-      outline: 0px solid #3498db; /* Add an outline to the image */
-      padding: 1em; /* Add padding below the image */
-      image-align: center;
-    }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            outline: 5px solid #3498db;
+            padding: 1em;
+        }
 
-    h1 {
-      margin: 0;
-    }
-  </style>
+        .section-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em;
+            background-color: white; /* White background for sections */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+            margin: 20px;
+        }
+
+        .section {
+            flex: 1;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .flip-card {
+            background-color: #fff; /* White background for flip card */
+            width: 100%;
+            height: 300px;
+            perspective: 1000px;
+            margin: 1em 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 8px;
+        }
+
+        .flip-card-front {
+            background-color: #ddd; /* Light grey background for front */
+            color: #333;
+        }
+
+        .flip-card-back {
+            background-color: #3498db; /* Blue background for back */
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .flashcard {
+            flex: 1;
+            text-align: center;
+            padding: 1em;
+            background-color: #f1f1f1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>Climate Change Awareness</h1>
-  </header>
-  <img
-    src="https://dattmedi.com/blog/wp-content/uploads/2023/02/What-is-Climate-Change-and-what-are-its-causes_-1024x767.png">
-  <h2>Climate Change is giant problem so here is some information you can use to learn about climate change</h2>
-  <div class="section-container">
-    <div class="section">
-      <h2>The Causes of Climate Change</h2>
-      <!-- Add text, images, and links for section 1 below. -->
+    <header>
+        <h1 style="font-size: 2em;">Climate Change Awareness</h1>
+    </header>
+    <img src="https://dattmedi.com/blog/wp-content/uploads/2023/02/What-is-Climate-Change-and-what-are-its-causes_-1024x767.png">
 
-    </div>
-    <div class="section">
-      <h2>The Effects of Climate Change</h2>
-      <!-- Add text, images, and links for section 2 below. -->
+    <div class="section-container">
+        <div class="section">
+            <h2 style="color: #3498db;">The Causes of Climate Change</h2>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p>What is the leading cause of climate change?</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 style="font-size: 1.2em;">Human Activities</h1>
+                        <p style="font-size: 0.9em;">Activities such as burning fossil fuels and deforestation contribute significantly to climate change.</p>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    </div>
-    <div class="section">
-      <h2>What You Can Do To Prevent Climate Change</h2>
-      <!-- Add text, images, and links for section 3 below. -->
+        <div class="section">
+            <h2 style="color: #3498db;">The Effects of Climate Change</h2>
+            <!-- Add text, images, and links for section 2 below. -->
+            <p>Climate change leads to various effects, including rising temperatures, melting ice caps, and extreme weather events.</p>
+        </div>
 
-    </div>
-  </div>
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-</html>
-<html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .flip-card {
-      background-color: transparent;
-      width: 500px;
-      height: 300px;
-      perspective: 1000px;
-    }
-
-    .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
-
-    .flip-card-front {
-      background-color: #bbb;
-      color: black;
-    }
-
-    .flip-card-back {
-      background-color: #2980b9;
-      color: white;
-      transform: rotateY(180deg);
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>The Causes of Climate Change</h1>
-
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <p>What is the leading causes of climate change?</p>
-      </div>
-      <div class="flip-card-back">
-        <h1></h1>
-        <p> </p>
-        <p> </p>
-      </div>
-    </div>
-  </div>
-
-</body>
-
-</html>
+        <div class="section">
+            <h2 style="color: #3498db;">What You Can Do To Prevent Climate Change</h2>
+            <!-- Add text, images, and links for section 3 below. -->
+            <p style="font-size: 1.1em;">Save energy at
